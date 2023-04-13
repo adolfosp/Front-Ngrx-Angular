@@ -1,0 +1,117 @@
+{
+  "rootPath": "c:\\Users\\Adolfo\\Documents\\MEGA\\Projetos\\Front-End\\Front-Ngrx/",
+  "data": [
+    {
+      "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/reducers/index.ts",
+      "pos": 441,
+      "end": 673,
+      "kind": 1004,
+      "kindText": "Reducer",
+      "state": {
+        "name": "AuthState",
+        "properties": [
+          {
+            "name": "user",
+            "type": "User"
+          }
+        ]
+      },
+      "name": "authReducer",
+      "actions": [
+        {
+          "name": "[Login Page] User Login",
+          "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/auth.actions.ts",
+          "pos": 115,
+          "end": 186,
+          "kind": 1002,
+          "kindText": "Action",
+          "createActionArgs": [
+            {
+              "name": "props",
+              "typeArguments": [
+                {
+                  "kind": 173,
+                  "kindText": "TypeLiteral",
+                  "properties": [
+                    {
+                      "name": "user",
+                      "type": "User"
+                    }
+                  ]
+                }
+              ],
+              "kind": 196,
+              "kindText": "CallExpression"
+            }
+          ],
+          "variable": "login",
+          "references": [
+            {
+              "name": "login",
+              "kind": 1003,
+              "kindText": "ActionReference",
+              "documentation": "",
+              "type": "ActionCreator<\"[Login Page] User Login\", (props: { user: User; } & \"action creator cannot return an array\") => { user: User; } & TypedAction<\"[Login Page] User Login\">>",
+              "isCall": false,
+              "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/reducers/index.ts",
+              "fileName": "index",
+              "declarationContext": [
+                {
+                  "kindText": "VariableDeclaration",
+                  "name": "authReducer"
+                }
+              ]
+            },
+            {
+              "name": "login",
+              "kind": 1003,
+              "kindText": "ActionReference",
+              "documentation": "",
+              "type": "ActionCreator<\"[Login Page] User Login\", (props: { user: User; } & \"action creator cannot return an array\") => { user: User; } & TypedAction<\"[Login Page] User Login\">>",
+              "isCall": false,
+              "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/auth.effects.ts",
+              "fileName": "auth.effects",
+              "declarationContext": [
+                {
+                  "kindText": "ClassDeclaration",
+                  "name": "AuthEffects"
+                },
+                {
+                  "kindText": "PropertyDeclaration",
+                  "name": "login$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "[Top Menu] Logout",
+          "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/auth.actions.ts",
+          "pos": 213,
+          "end": 252,
+          "kind": 1002,
+          "kindText": "Action",
+          "variable": "logout",
+          "references": [
+            {
+              "name": "logout",
+              "kind": 1003,
+              "kindText": "ActionReference",
+              "documentation": "",
+              "type": "ActionCreator<\"[Top Menu] Logout\", () => TypedAction<\"[Top Menu] Logout\">>",
+              "isCall": false,
+              "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/reducers/index.ts",
+              "fileName": "index",
+              "declarationContext": [
+                {
+                  "kindText": "VariableDeclaration",
+                  "name": "authReducer"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

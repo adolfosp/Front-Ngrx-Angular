@@ -1,0 +1,28 @@
+@startuml [Top Menu] Logout
+
+set namespaceSeparator ::
+skinparam class {
+    BackgroundColor<<listen>> HoneyDew
+    BackgroundColor<<action>> Wheat
+    BackgroundColor<<dispatch>> Technology
+}
+
+interface "[Top Menu] Logout" << (A,#FF7700) action >> {
+            variable: logout
+            src: auth.actions
+            --
+            
+        }
+
+        
+interface "index:: authReducer L" << (L,orchid) listen >> {
+            name: logout
+            action: [Top Menu] Logout
+            ..
+            Variable: authReducer
+            __
+        }
+        "[Top Menu] Logout" <.down. "index:: authReducer L"
+ 
+
+@enduml

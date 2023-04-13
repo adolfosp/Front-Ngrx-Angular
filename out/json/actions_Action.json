@@ -1,0 +1,42 @@
+{
+  "rootPath": "c:\\Users\\Adolfo\\Documents\\MEGA\\Projetos\\Front-End\\Front-Ngrx/",
+  "data": [
+    {
+      "name": "[Login Page] User Login",
+      "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/auth.actions.ts",
+      "pos": 115,
+      "end": 186,
+      "kind": 1002,
+      "kindText": "Action",
+      "createActionArgs": [
+        {
+          "name": "props",
+          "typeArguments": [
+            {
+              "kind": 173,
+              "kindText": "TypeLiteral",
+              "properties": [
+                {
+                  "name": "user",
+                  "type": "User"
+                }
+              ]
+            }
+          ],
+          "kind": 196,
+          "kindText": "CallExpression"
+        }
+      ],
+      "variable": "login"
+    },
+    {
+      "name": "[Top Menu] Logout",
+      "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/auth.actions.ts",
+      "pos": 213,
+      "end": 252,
+      "kind": 1002,
+      "kindText": "Action",
+      "variable": "logout"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "rootPath": "c:\\Users\\Adolfo\\Documents\\MEGA\\Projetos\\Front-End\\Front-Ngrx/",
+  "data": [
+    {
+      "filePath": "c:/Users/Adolfo/Documents/MEGA/Projetos/Front-End/Front-Ngrx/src/app/auth/reducers/index.ts",
+      "pos": 441,
+      "end": 673,
+      "kind": 1004,
+      "kindText": "Reducer",
+      "state": {
+        "name": "AuthState",
+        "properties": [
+          {
+            "name": "user",
+            "type": "User"
+          }
+        ]
+      },
+      "name": "authReducer"
+    }
+  ]
+}

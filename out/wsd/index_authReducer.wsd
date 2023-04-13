@@ -1,0 +1,56 @@
+@startuml index_authReducer
+
+set namespaceSeparator ::
+skinparam class {
+    BackgroundColor<<listen>> HoneyDew
+    BackgroundColor<<action>> Wheat
+    BackgroundColor<<dispatch>> Technology
+}
+
+interface "[Login Page] User Login" << (A,#FF7700) action >> {
+            variable: login
+            src: auth.actions
+            --
+            props<{user: User}>
+
+        }
+
+        
+interface "index:: authReducer L" << (L,orchid) listen >> {
+            name: login
+            action: [Login Page] User Login
+            ..
+            Variable: authReducer
+            __
+        }
+        "[Login Page] User Login" <.down. "index:: authReducer L"
+
+interface "auth.effects:: AuthEffects L" << (L,orchid) listen >> {
+            name: login
+            action: [Login Page] User Login
+            ..
+            Class: AuthEffects
+Property: login$
+            __
+        }
+        "[Login Page] User Login" <.down. "auth.effects:: AuthEffects L"
+
+interface "[Top Menu] Logout" << (A,#FF7700) action >> {
+            variable: logout
+            src: auth.actions
+            --
+            
+        }
+
+        
+interface "index:: authReducer L" << (L,orchid) listen >> {
+            name: logout
+            action: [Top Menu] Logout
+            ..
+            Variable: authReducer
+            __
+        }
+        "[Top Menu] Logout" <.down. "index:: authReducer L"
+ 
+
+@enduml
