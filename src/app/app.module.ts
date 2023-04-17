@@ -51,10 +51,18 @@ const routes: Routes = [
     MatListModule,
     MatToolbarModule,
     AuthModule.forRoot(),
-    StoreModule.forRoot(reducers, {metaReducers}),
+    StoreModule.forRoot(reducers, {metaReducers, runtimeChecks:{
+      strictActionSerializability: true, // nossas actions vai ser serializável
+      strictStateImmutability: true,
+      strictStateSerializability: true,
+      strictActionImmutability: true
+      //na criacão do reducer, o correto é criar um novo objeto e não alterar o obj. atual. Essa prop evita essa alteração
+
+    }}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule.forRoot({
+      //configura para ser capturado no redux
       stateKey:  'router',
       routerState: RouterState.Minimal
     })
