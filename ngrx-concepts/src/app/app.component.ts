@@ -4,7 +4,7 @@ import { Store, select } from "@ngrx/store";
 import { Observable } from 'rxjs';
 import { login, logout } from './auth/auth.actions';
 import { isLoggedIn, isLoggedOut } from './auth/auth.selectors';
-import { AuthState } from './auth/reducers';
+import { IAuthState } from './auth/reducers';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     isLoggedIn$: Observable<boolean>;
     isLoggedOut$: Observable<boolean>;
 
-    constructor(private router: Router, private store: Store<AuthState>) {
+    constructor(private router: Router, private store: Store<IAuthState>) {
     }
 
     ngOnInit() {

@@ -4,11 +4,11 @@ import { User } from "../model/user.model";
 
 export const authFeatureKey = "auth";
 
-export interface AuthState {
+export interface IAuthState {
 	user: User;
 }
 
-export const initialAuthState: AuthState = {
+export const initialAuthState: IAuthState = {
 	user: undefined,
 };
 

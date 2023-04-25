@@ -1,7 +1,7 @@
 import {createFeatureSelector, createSelector} from '@ngrx/store';
-import {AuthState} from './reducers';
+import {IAuthState} from './reducers';
 
-export const selectAuthState = createFeatureSelector<AuthState>("auth");
+export const selectAuthState = createFeatureSelector<IAuthState>("auth");
 //type safety selectors
 export const isLoggedIn = createSelector(
   selectAuthState,
